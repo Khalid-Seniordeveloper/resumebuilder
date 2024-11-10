@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Generator</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div id="main-container">
+
+
+        <div class="personal-container">
+<form id="form">
+
+
+    <h1>PERSONAL INFORMATION</h1>
+    <input type="text" placeholder="Please give your full name here" class="fields" id="full-name">
+    <input type="text" placeholder="Please give your Email name here" class="fields" id="email">
+    <input type="text" placeholder="Please give your Linkedin name here" class="fields" id="linked">
+    <input type="text" placeholder="Please give your Contact name here" class="fields" id="contact">
+    <input type="text" placeholder="Please give your Address name here" class="fields" id="address">
+
+    
+
+
+    <h1>Professional Summary</h1>
+     <textarea placeholder="Enter something about your profession" class="fields-text" id="area"></textarea>
+
+        <h1>Education</h1>
+        <input type="text" placeholder="Please give your Degree name here" class="fields" id="degree">
+        <input type="text" placeholder="Please give your University name here" class="fields" id="uni">
+        <input type="text" placeholder="Please give your Graduation year name here" class="fields" id="graduate-year">
+     
+    
+
+
+
+        <h1>Certificate Training</h1>
+        <input type="text" placeholder="Please give your Certificate name here" class="fields" id="certificate-name">
+        <input type="text" placeholder="Please give your Institute name here" class="fields" id="institute-name">
+        <input type="text" placeholder="Please give your Date recieved and year name here" class="fields" id="date-institute">
+        <button type="submit" class="btn">Generate PDF</button>
+
+
+
+</form>
+          <div id="content"></div>  
+            </div>
+        
+
+    
+
+    </div>
+  
+
+  <script src="./app.js"></script>
+
+</body>
+</html>
